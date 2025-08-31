@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stars & Code</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative min-h-screen bg-black text-white overflow-hidden">
+
+  <!-- Navigation -->
+  <header class="absolute top-0 w-full z-20 bg-black bg-opacity-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Stars & Code</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-purple-400">About</a></li>
+        <li><a href="#expertise" class="hover:text-purple-400">Expertise</a></li>
+        <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Earth Background -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://static.wixstatic.com/media/1813e9_699d862ec43a4063ae9b41b71025ccbe~mv2.png"
+         alt="Earth from space"
+         class="w-full h-full object-cover opacity-60">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+  </div>
+
+  <!-- Starfield -->
+  <div id="starfield" class="absolute inset-0 z-10"></div>
+
+  <!-- Content -->
+  <main class="relative z-20 pt-32 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">Navigate Your Career Like the Stars</h2>
+    <p class="text-lg text-gray-300 mb-12">
+      Stars guided explorers through the unknown. Code guides us through the digital universe.  
+      At Stars & Code, we combine both to help you navigate your career path.
+    </p>
+
+    <!-- Call to Action -->
+    <a href="#contact"
+       class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition">
+      Get in Touch
+    </a>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="relative z-20 py-20 px-6 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-4">About Stars & Code</h3>
+    <p class="text-gray-300">
+      For as long as people have traveled, stars have been their compass—always present, always guiding.  
+      In the modern world, code plays a similar role: it creates structure from complexity and builds systems that move us forward.  
+      Stars & Code exists at that intersection: helping you navigate with clarity and build with confidence.
+    </p>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="relative z-20 py-20 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12">Our Expertise</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-900 bg-opacity-70 rounded-lg shadow-lg hover:shadow-purple-500/20 transition">
+        <h4 class="text-xl font-semibold mb-2">Full-Stack Development</h4>
+        <p class="text-gray-300">React, Node.js, databases, APIs, and deployment.</p>
+      </div>
+      <div class="p-6 bg-gray-900 bg-opacity-70 rounded-lg shadow-lg hover:shadow-purple-500/20 transition">
+        <h4 class="text-xl font-semibold mb-2">Team Leadership</h4>
+        <p class="text-gray-300">Agile methods, mentoring, and project management.</p>
+      </div>
+      <div class="p-6 bg-gray-900 bg-opacity-70 rounded-lg shadow-lg hover:shadow-purple-500/20 transition">
+        <h4 class="text-xl font-semibold mb-2">Startup Innovation</h4>
+        <p class="text-gray-300">MVPs, growth hacking, and building scalable products.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="relative z-20 py-20 px-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-6">Contact Us</h3>
+    <p class="text-center text-gray-300 mb-10">No constellation starts fully formed. Start your journey with one connection.</p>
+
+    <form id="contact-form" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-800 text-white">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800 text-white">
+      <input type="text" name="subject" placeholder="Subject" class="w-full p-3 rounded bg-gray-800 text-white">
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+      <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <footer class="relative z-20 py-6 text-center text-gray-400">
+    © 2025 Stars & Code. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

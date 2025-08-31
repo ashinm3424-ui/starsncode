@@ -1,0 +1,11 @@
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: pulse infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
